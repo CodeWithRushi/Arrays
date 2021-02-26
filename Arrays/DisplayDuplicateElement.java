@@ -80,6 +80,8 @@ public class DisplayDuplicateElement {
 		}
 		
 		Set<Map.Entry<Integer, Integer>> sm=m.entrySet();
+		System.out.print("ELEMENT"+" "+"COUNT");
+		System.out.println();
 		for(Map.Entry<Integer, Integer> me :sm)
 		{	/*	
 			if(me.getValue()>1)
@@ -87,7 +89,7 @@ public class DisplayDuplicateElement {
 			else
 				System.out.println(me.getKey()+" "+me.getValue());
 				*/
-			System.out.println(me.getKey()+" "+me.getValue());
+			System.out.println("  "+me.getKey()+"       "+me.getValue());
 		}
 
 	}
