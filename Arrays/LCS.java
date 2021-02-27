@@ -1,3 +1,6 @@
+/* WAP TO FIND LONGEST CONSECUTIVE SEQUENCE AND  DISPLAY IT'S MAXIMUM LENGTH */
+
+
 import java.util.*;
 public class LCS {
 	
