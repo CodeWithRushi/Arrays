@@ -1,6 +1,12 @@
+/* WAP TO FIND COMMON ELEMENTS IN A ARRAY*/
+
+
+
+
 import java.util.*;
 
-/*     // METHOD 1:- USING ARRAYLIST
+ // METHOD 1:- USING ARRAYLIST
+/*    
 public class CommonElement {
 
 	public static void main(String[] args) {
@@ -28,8 +34,10 @@ public class CommonElement {
 
 */
 
-/*   // METHOD 2:- USING NORMAL METHOD
 
+// METHOD 2:- USING NORMAL METHOD
+
+/*   
 public class CommonElement {
 
 	public static void main(String[] args) {
@@ -54,7 +62,8 @@ public class CommonElement {
 */
 
 
-          // METHOD 2:- USING HASHSET 
+
+// METHOD 2:- USING HASHSET 
 public class CommonElement {
 
 	public static void main(String[] args) {
