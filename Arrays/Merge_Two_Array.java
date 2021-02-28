@@ -1,3 +1,5 @@
+/*WAP TO MERGE THE TWO ARRAY ELEMENTS */
+
 
 public class Merge_Two_Array {
 
