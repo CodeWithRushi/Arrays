@@ -1,3 +1,6 @@
+/* WAP TO CHECK THE STRING IS ANAGRAM OR NOT*/
+
+
 import java.util.*;
 public class Anagrams {
 
