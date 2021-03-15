@@ -3,7 +3,7 @@
 */
 
 import java.util.*;
-public class FIND_ENEMY'S_BOUNDRY {
+public class EnemyBoundryLimits {
 
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
@@ -19,29 +19,38 @@ public class FIND_ENEMY'S_BOUNDRY {
 		
 		for(int i=0;i<c;i++)
 		{
-			int last=0;
-			int j=0;
 			
-			for(j=0;j<arr[i].length;j++)
+			
+			for(int j=0;j<arr[i].length;j++)
 			{
 				arr[i][j]=sc.nextInt();	
 				
 			}
-			last=arr[i].length;
-			if(arr[i].length==1)
-			{
-				System.out.println(arr[i][0]);
-			}
-			else
-			{
-				System.out.print(arr[i][0]+" "+arr[i][last-1]);
-			}
+			
+		}
+		
+		for(int i=0;i<c;i++)
+		{
+			int last=0;
+			int j=0;
+			
+				last=arr[i].length;
+				if(arr[i].length==1)
+				{
+					System.out.println(arr[i][0]);
+				}
+				else
+				{
+					System.out.println(arr[i][0]+" "+arr[i][last-1]);
+				}
+				
+				
+			
 			
 		}
 	}
 
 }
-
 
 /*
 OUTPUT:-
@@ -55,12 +64,12 @@ Enetr Number of Enemy Country
 1
 6
 12 68 78 10
+10 2
+100
+1 2 3 4 5 6
 12 10
 10 2
-10 2
 100
-100
-
-1 2 3 4 5 6
 1 6
+
 */
