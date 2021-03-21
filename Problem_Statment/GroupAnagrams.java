@@ -9,7 +9,7 @@ public class GroupAnagrams {
 	System.out.println("Enter Size");
 	int n=sc.nextInt();
 	System.out.println("Enter Words");
-	String[] words=new String[5];
+	String[] words=new String[n];
 	
 	for(int i=0;i<words.length;i++)
 	{
