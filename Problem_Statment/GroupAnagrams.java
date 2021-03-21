@@ -1,3 +1,6 @@
+/* WAP TO GIVE A COLLECTION OF STRINGS,GROUP THE ANAGRAMS AND RETURN THE NUMBER OF GROUPS FORMED*/
+
+
 package Problem_Statment;
 import java.util.*;
 public class GroupAnagrams {
@@ -33,3 +36,18 @@ public class GroupAnagrams {
 	}
 
 }
+
+
+/*
+
+Enter Size
+5
+Enter Words
+cat
+act
+silent
+listen
+kit
+3
+
+*/
