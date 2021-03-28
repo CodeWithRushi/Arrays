@@ -1,0 +1,84 @@
+/*
+ * GIVEN A LIST OF STRINGS OF BRACKET CHARACTERS:{}() THE STRING OF BRACKETS IS BALANCED OR NOT*/
+package Problem_Statment;
+import java.util.*;
+public class JavaStack {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Size");
+		int n=sc.nextInt();
+		System.out.println("Enter String");
+		
+		String[] str=new String[n];
+		boolean b=true;
+		for(int i=0;i<str.length;i++)
+		{
+			str[i]=sc.next();
+			b=isBalance(str[i]);
+			if(b==true)
+				System.out.println("True");
+			else
+				System.out.println("False");
+		}
+	}
+	static boolean isBalance(String str)
+	{
+		Deque<Character> stack = new ArrayDeque<Character>();
+		
+		for (int i = 0; i < str.length(); i++)
+        {
+            char x = str.charAt(i);
+ 
+            if (x == '(' || x == '[' || x == '{')
+            {
+                stack.push(x);
+                continue;
+            }
+ 
+            
+            if (stack.isEmpty())
+                return false;
+            char check;
+            switch (x) {
+            case ')':
+                check = stack.pop();
+                if (check == '{' || check == '[')
+                    return false;
+                break;
+ 
+            case '}':
+                check = stack.pop();
+                
+                if (check == '(' || check == '[')
+                    return false;
+                break;
+ 
+            case ']':
+                check = stack.pop();
+                if (check == '(' || check == '{')
+                    return false;
+                break;
+            }
+        }
+ 
+       
+        return (stack.isEmpty());
+}
+
+
+/*
+OUTPUT:-
+
+ Enter Size
+3
+Enter String
+{}()
+True
+([()])
+True
+{})
+False
+
+ * */
+ */
