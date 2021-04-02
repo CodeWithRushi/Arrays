@@ -58,8 +58,10 @@ Enter Element
 2
 3
 4
+Pair Is:-
 5,1
 2,4
+Count Of Pair Is:-
 2
 
  */
