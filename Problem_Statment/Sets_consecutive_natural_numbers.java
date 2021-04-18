@@ -1,4 +1,8 @@
-package Problem_Statment;
+/*
+@author Rushikesh Shelke
+
+Given a number N. The task is to print all possible consecutive numbers that add up to N and Also Count Of Sets.
+*/
 import java.util.*;
 public class Sets_consecutive_natural_numbers {
 
@@ -34,6 +38,17 @@ public class Sets_consecutive_natural_numbers {
 			sum=0;
 			end--;
 		}
-		System.out.println(count);
+		System.out.println("The Count is "+count);
 	}
 }
+
+/*
+15
+15 
+7 8 
+4 5 6 
+1 2 3 4 5 
+
+The Count is 4
+
+*/
