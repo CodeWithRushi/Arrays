@@ -1,4 +1,15 @@
-package Problem_Statment;
+/*
+@author Rushikesh Shelke
+
+Roots of a quadratic equation are determined by the following formula:
+
+
+To calculate the roots −
+
+Calculate the determinant value (b*b)-(4*a*c).
+If determinant is greater than 0 roots are [-b +squareroot(determinant)]/2*a and [-b -squareroot(determinant)]/2*a.
+If determinant is equal to 0 root value is (-b+Math.sqrt(d))/(2*a)
+*/
 import java.util.*;
 public class Quardatic_Equation {
 
@@ -9,8 +20,9 @@ public class Quardatic_Equation {
 		double input3=sc.nextDouble();
 		
 		double[] root=findroots(input1,input2,input3);
-		System.out.println(root[0]+" "+root[1]);
+		System.out.println(String.format("%.3f", root[0])+" "+String.format("%.3f", root[1]));
 		
+
 
 	}
 
@@ -20,32 +32,19 @@ public class Quardatic_Equation {
 		
 		double determinant=(input2*input2)-4*(input1*input3);
 		double sqrt=Math.sqrt(determinant);
-		System.out.println(determinant);
-		
-		if(determinant>0)
-		{
-			double first_root=(-input2+sqrt)/(2*input1);
-			double second_root=(-input2-sqrt)/(2*input1);
-			a[0]=first_root;
-			a[1]=second_root;
-		}
-		else if(determinant == 0){
-	         System.out.println("Root is :: "+(-input2 + sqrt)/(2*input1));
-	      }
-			
-		
-		/*
-		double determinant = (input2*input2)-(4*input1*input3);
-	      double sqrt = Math.sqrt(determinant);
-
-	      if(determinant>0){
-	         Object firstRoot = (-input2 + sqrt)/(2*input1);
-	         Object secondRoot = (-input2 - sqrt)/(2*input1);
-	         System.out.println("Roots are :: "+ firstRoot +" and "+secondRoot);
-	      }else if(determinant == 0){
-	         System.out.println("Root is :: "+(-input2 + sqrt)/(2*input1));
-	      }*/
+		double first_root=(-input2+sqrt)/(2*input1);
+		double second_root=(-input2-sqrt)/(2*input1);
+		a[0]=first_root;
+		a[1]=second_root;
 		return a;
 		
 	}
 }
+
+/*
+2
+4
+1
+
+-0.293 -1.707
+*/
