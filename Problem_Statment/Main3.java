@@ -1,4 +1,4 @@
-package Problem_Statment;
+
 
 import java.util.Scanner;
 
@@ -83,25 +83,3 @@ g
 	
 	
 	
-/*
-	public static void main(String[] args) {
-		Scanner sc=new Scanner(System.in);
-		int n=sc.nextInt();
-		int num[]=new int[n];
-		for(int i=0;i<num.length;i++)
-		{
-			num[i]=sc.nextInt();
-		}
-		int temp=num[0];
-		for(int i=0;i<num.length;i++)
-		{
-			
-			if(temp<num[i])
-			{
-				temp=num[i];
-			}
-		}
-		System.out.println(temp);
-	}
-
-}*/
