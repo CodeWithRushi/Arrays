@@ -1,4 +1,10 @@
-package Problem_Statment;
+/*
+WAP TO FIND THE AES NUMBER WITHIN RANGE AND COUNT OF THIS AES NUMBERS
+
+
+AES NUMBER
+	THE AES NUMBER MEANS THE NUMBER HAS ONLY 4 DIVISIORS AND COUNT THIS AES NUMBERS
+*/
 import java.util.*;
 public class AES_Number {
 
@@ -28,3 +34,10 @@ public class AES_Number {
 	}
 
 }
+
+/*
+Enter Range
+20
+
+5
+*/
