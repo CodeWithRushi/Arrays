@@ -1,0 +1,41 @@
+/* Find total number of distinct years from a string
+
+Given a string containing the words and dates, the task is to find the total number of distinct years mentioned in that string. 
+Note: Assuming that the date will be in ‘DD-MM-YYYY’ format. 
+
+*/
+
+import java.util.*;
+public class Distinct_Years {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter String");
+		String str=sc.nextLine();
+		String str1[]=str.split("\\D+");
+		int first=0,second=0;
+		Set<String> unique=new HashSet<>();
+		for(String st:str1)
+		{
+			if(st.length()==4)
+				unique.add(st);
+		}
+		System.out.println(unique.size());
+
+	}
+
+}
+/*
+OUTPUT:-
+Enter String
+UN WAS ESTABLISHED ON 24-10-1945.INDIA GOT FREEDOM ON 15-08-1947
+2
+
+Enter String
+SOON AFTER THE WORLD WAR 2 ENDED ON 01-09-1945.
+THE UN WAS ESTABLISHED ON 24-10-1945
+1
+
+ * */
+
+
