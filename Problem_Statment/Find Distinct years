@@ -13,7 +13,6 @@ public class Distinct_Years {
 		System.out.println("Enter String");
 		String str=sc.nextLine();
 		String str1[]=str.split("\\D+");
-		int first=0,second=0;
 		Set<String> unique=new HashSet<>();
 		for(String st:str1)
 		{
