@@ -50,7 +50,7 @@ public class Longest_Palindromic_String {
 				{
 					while(l>=0 && h<str.length() && str.charAt(l)==str.charAt(h))
 					{
-						if(h-1+1>len)
+						if(h-l+1>len)
 						{
 							start=l;
 							end=h+1;
